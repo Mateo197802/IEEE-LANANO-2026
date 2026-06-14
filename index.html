@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE LANANO 2026 | Yachay Tech University</title>
+  <meta name="description" content="IEEE LANANO 2026 - Latin American Conference on Nanotechnology. Conferencia virtual organizada por IEEE NTC Student Branch de Yachay Tech University. Noviembre 3-6, 2026.">
+  <meta name="keywords" content="IEEE, LANANO, nanotechnology, conference, Yachay Tech, nanoscience, virtual conference, Latin America, nanotecnologia">
+  <meta name="author" content="IEEE NTC Yachay Tech Student Branch">
+  <meta property="og:title" content="IEEE LANANO 2026 | Yachay Tech University">
+  <meta property="og:description" content="Latin American Conference on Nanotechnology - Virtual Conference, November 3-6, 2026">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A0F1C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cpath d='M22 2L40 12.5V31.5L22 42L4 31.5V12.5L22 2Z' stroke='%2300A6A0' stroke-width='2' fill='%230A0F1C'/%3E%3Cpath d='M22 8L34 14.5V27.5L22 34L10 27.5V14.5L22 8Z' stroke='%23006CB7' stroke-width='1.5' fill='none'/%3E%3Ctext x='22' y='24' text-anchor='middle' fill='%2300A6A0' font-family='sans-serif' font-weight='700' font-size='10'%3ENTC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <canvas id="hero-canvas"></canvas>
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="blob blob-5"></div>
+    <div class="blob blob-6"></div>
+    <div class="blob blob-7"></div>
+    <div class="blob blob-8"></div>
+    <div class="blob blob-9"></div>
+    <div class="blob blob-10"></div>
+    <div class="blob blob-11"></div>
+    <div class="blob blob-12"></div>
+  </div>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav-container">
+        <a href="#" class="nav-logo">
+          <img src="assets/logo-ieee-glass.png" alt="IEEE Nanotechnology Council Yachay Tech Student Branch">
+        </a>
+        <ul class="nav-links">
+          <div class="nav-indicator" id="nav-indicator"></div>
+          <li><a href="#about" class="nav-link" data-i18n="nav-about">Acerca de</a></li>
+          <li><a href="#scope" class="nav-link" data-i18n="nav-scope">Alcance</a></li>
+          <li><a href="#process" class="nav-link" data-i18n="nav-process">Proceso</a></li>
+          <li><a href="#dates" class="nav-link" data-i18n="nav-dates">Fechas</a></li>
+          <li><a href="#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a></li>
+          <li><a href="#cfp" class="nav-link" data-i18n="nav-cfp">Convocatoria</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="lang-btn active" id="btn-es">ES</button>
+          <button class="lang-btn" id="btn-en">EN</button>
+          <a href="#cfp" class="btn-submit" data-i18n="nav-submit">Postular</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="nav-link" data-i18n="nav-about">Acerca de</a>
+      <a href="#scope" class="nav-link" data-i18n="nav-scope">Alcance</a>
+      <a href="#process" class="nav-link" data-i18n="nav-process">Proceso</a>
+      <a href="#dates" class="nav-link" data-i18n="nav-dates">Fechas</a>
+      <a href="#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a>
+      <a href="#cfp" class="nav-link" data-i18n="nav-cfp">Convocatoria</a>
+      <a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a>
+      <div class="mobile-menu-actions">
+        <button class="lang-btn active" id="btn-es-mobile">ES</button>
+        <button class="lang-btn" id="btn-en-mobile">EN</button>
+        <a href="#cfp" class="btn-submit" data-i18n="nav-submit">Postular</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+
+        <p class="hero-subtitle" data-i18n="hero-subtitle">Latin American Conference on Nanotechnology</p>
+        <h1 class="hero-title" data-i18n="hero-title">IEEE LANANO 2026</h1>
+        <p class="hero-description" data-i18n="hero-description">La segunda Conferencia Latinoamericana IEEE sobre Nanotecnologia. Una plataforma presencial para cientificos, ingenieros y educadores de todo el mundo para presentar investigaciones de vanguardia en nanociencia y nanotecnologia. Incluye un programa de training especializado.</p>
+        <div class="hero-divider"></div>
+        <div class="countdown-container" style="position: relative;">
+          <div class="countdown-glow"></div>
+          <p class="countdown-label" data-i18n="countdown-label" style="position: relative; z-index: 1;">La conferencia comienza en</p>
+          <div class="countdown-grid" style="position: relative; z-index: 1;">
+            <div class="countdown-item">
+              <span class="countdown-value" id="countdown-days">000</span>
+              <span class="countdown-unit" data-i18n="countdown-days">Dias</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="countdown-hours">00</span>
+              <span class="countdown-unit" data-i18n="countdown-hours">Horas</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="countdown-minutes">00</span>
+              <span class="countdown-unit" data-i18n="countdown-minutes">Minutos</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-value" id="countdown-seconds">00</span>
+              <span class="countdown-unit" data-i18n="countdown-seconds">Segundos</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#cfp" class="btn btn-primary" data-i18n="hero-btn-submit">Postular Articulo</a>
+          <a href="#about" class="btn btn-outline" data-i18n="hero-btn-more">Saber Mas</a>
+        </div>
+      </div>
+      <div class="hero-logos">
+        <div class="hero-logo-item">
+          <img src="assets/logo-ieee-glass.png" alt="IEEE Nanotechnology Council">
+        </div>
+        <div class="hero-logo-divider" style="width:1px;height:32px;background:rgba(255,255,255,0.2)"></div>
+        <div class="hero-logo-item">
+          <img src="assets/logo-yt-glass.png" alt="Yachay Tech University">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+         ============================================================ -->
+    <section class="section" id="about" style="position: relative; overflow: hidden;">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-label" data-i18n="about-label">Acerca del evento</div>
+          <h2 class="section-title" data-i18n="about-title">Impulsando la Innovacion en Nanotecnologia</h2>
+          <p class="section-description" data-i18n="about-description">IEEE LANANO es una conferencia internacional anual que fomenta la colaboracion y acelera el intercambio de conocimiento en nanociencia y nanotecnologia entre investigadores de America Latina y el mundo.</p>
+        </div>
+        <div class="about-grid">
+          <!-- Card 1: Investigacion -->
+          <div class="about-card animate-on-scroll">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00A6A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M4.22 4.22l2.83 2.83m9.9 9.9l2.83 2.83M1 12h4m14 0h4M4.22 19.78l2.83-2.83m9.9-9.9l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title" data-i18n="about-card1-title">Investigacion de Vanguardia</h3>
+            <p class="about-card-text" data-i18n="about-card1-text">Presenta y descubre las ultimas innovaciones en nanomateriales, nanoelectronica, nanotecnologia en ciencias de la vida y mas.</p>
+          </div>
+          <!-- Card 2: Colaboracion -->
+          <div class="about-card animate-on-scroll delay-1">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00A6A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title" data-i18n="about-card2-title">Colaboracion Global</h3>
+            <p class="about-card-text" data-i18n="about-card2-text">Conecta con investigadores internacionales y locales que actuaran como coautores para fortalecer tu investigacion.</p>
+          </div>
+          <!-- Card 3: Publicacion -->
+          <div class="about-card animate-on-scroll delay-2">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00A6A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title" data-i18n="about-card3-title">Publicacion IEEE Xplore</h3>
+            <p class="about-card-text" data-i18n="about-card3-text">Los articulos aceptados seran publicados en IEEE Xplore Digital Library, asegurando amplia difusion e indexacion.</p>
+          </div>
+          <!-- Card 4: Virtual -->
+          <div class="about-card animate-on-scroll delay-3">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00A6A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title" data-i18n="about-card4-title">Training Presencial</h3>
+            <p class="about-card-text" data-i18n="about-card4-text">Asiste a sesiones de training especializadas en Yachay Tech University. Los participantes se agrupan por afinidad tematica con ponentes como coautores.</p>
+          </div>
+        </div>
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-item animate-on-scroll">
+            <div class="stat-value" data-count="15" data-suffix="+">0</div>
+            <div class="stat-label" data-i18n="stat-speakers">Ponentes</div>
+          </div>
+          <div class="stat-item animate-on-scroll delay-1">
+            <div class="stat-value" data-count="10" data-suffix="+">0</div>
+            <div class="stat-label" data-i18n="stat-countries">Paises</div>
+          </div>
+          <div class="stat-item animate-on-scroll delay-2">
+            <div class="stat-value" data-count="50" data-suffix="+">0</div>
+            <div class="stat-label" data-i18n="stat-articles">Articulos</div>
+          </div>
+          <div class="stat-item animate-on-scroll delay-3">
+            <div class="stat-value" data-count="4">0</div>
+            <div class="stat-label" data-i18n="stat-days">Dias</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONFERENCE SCOPE
+         ============================================================ -->
+    <section class="section section-alt" id="scope" style="position: relative; overflow: hidden;">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-label" data-i18n="scope-label">Alcance de la conferencia</div>
+          <h2 class="section-title" data-i18n="scope-title">Areas Tematicas</h2>
+          <p class="section-description" data-i18n="scope-description">Explora las areas de investigacion que abarca la conferencia, cada una con impacto transformador en la ciencia y tecnologia actual.</p>
+        </div>
+        <!-- Tabs -->
+        <div class="scope-tabs">
+          <button class="scope-tab active" data-panel="scope-panel-1" data-i18n="scope-tab1">Nanomateriales Avanzados</button>
+          <button class="scope-tab" data-panel="scope-panel-2" data-i18n="scope-tab2">Nanoelectronica</button>
+          <button class="scope-tab" data-panel="scope-panel-3" data-i18n="scope-tab3">Ciencias de la Vida</button>
+          <button class="scope-tab" data-panel="scope-panel-4" data-i18n="scope-tab4">ML en Nanotecnologia</button>
+          <button class="scope-tab" data-panel="scope-panel-5" data-i18n="scope-tab5">Tecnologia Cuantica</button>
+          <button class="scope-tab" data-panel="scope-panel-6" data-i18n="scope-tab6">Nanodispositivos</button>
+          <button class="scope-tab" data-panel="scope-panel-7" data-i18n="scope-tab7">Nanorobotica</button>
+        </div>
+        <!-- Panels -->
+        <div class="scope-panels">
+          <!-- Panel 1: Nanomateriales -->
+          <div class="scope-panel active" id="scope-panel-1">
+            <div class="scope-visual">
+              <img src="assets/images/scope-nanomaterials.png" alt="Nanomateriales Avanzados">
+              <div class="scope-visual-overlay">
+                <span class="scope-visual-label" data-i18n="scope1-title">Nanomateriales Avanzados</span>
+              </div>
+            </div>
+            <div class="scope-info">
+              <h3 class="scope-title" data-i18n="scope1-title">Nanomateriales Avanzados</h3>
+              <p class="scope-description" data-i18n="scope1-desc">Investigacion en grafeno, nanotubos de carbono, materiales 2D, nanocompositos y nanomateriales funcionales. Esta area abarca el diseno, sintesis y caracterizacion de materiales a escala nanometrica con propiedades unicas para aplicaciones en energia, electronica, medicina y medio ambiente.</p>
+              <div class="scope-impact">
+                <div class="scope-impact-title" data-i18n="scope-impact-label">Impacto Actual</div>
+                <p class="scope-impact-text" data-i18n="scope1-impact">Los nanomateriales estan revolucionando el almacenamiento de energia con baterias de grafeno que cargan en minutos, filtros de agua basados en nanotubos que eliminan el 99.9% de contaminantes, y recubrimientos autolimpiantes inspirados en la naturaleza. El mercado global de nanomateriales superara los $30 mil millones para 2027.</p>
+              </div>
+              <div class="scope-tags">
+                <span class="scope-tag">Grafeno</span>
+                <span class="scope-tag">Nanotubos</span>
+                <span class="scope-tag">Materiales 2D</span>
+                <span class="scope-tag">Nanocompositos</span>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 2: Nanoelectronica -->
+          <div class="scope-panel" id="scope-panel-2">
+            <div class="scope-visual">
+              <img src="assets/images/scope-nanoelectronics.png" alt="Nanoelectronica">
+              <div class="scope-visual-overlay">
+                <span class="scope-visual-label" data-i18n="scope2-title">Nuevas Tendencias en Nanoelectronica</span>
+              </div>
+            </div>
+            <div class="scope-info">
+              <h3 class="scope-title" data-i18n="scope2-title">Nuevas Tendencias en Nanoelectronica</h3>
+              <p class="scope-description" data-i18n="scope2-desc">Exploracion de transistores moleculares, puntos cuanticos, spintronica y electronica flexible a escala nanometrica. La nanoelectronica esta redefiniendo los limites de la computacion y las comunicaciones con dispositivos cada vez mas pequenos y eficientes.</p>
+              <div class="scope-impact">
+                <div class="scope-impact-title" data-i18n="scope-impact-label">Impacto Actual</div>
+                <p class="scope-impact-text" data-i18n="scope2-impact">Los transistores de 2nm ya son realidad, permitiendo chips con 50 mil millones de transistores. La electronica flexible basada en nanomateriales esta creando dispositivos vestibles y pantallas plegables. Se proyecta que el mercado de nanoelectronica alcance $120 mil millones para 2028.</p>
+              </div>
+              <div class="scope-tags">
+                <span class="scope-tag">Transistores</span>
+                <span class="scope-tag">Spintronica</span>
+                <span class="scope-tag">Electronica Flexible</span>
+                <span class="scope-tag">Puntos Cuanticos</span>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 3: Ciencias de la Vida -->
+          <div class="scope-panel" id="scope-panel-3">
+            <div class="scope-visual">
+              <img src="assets/images/scope-lifesciences.png" alt="Ciencias de la Vida">
+              <div class="scope-visual-overlay">
+                <span class="scope-visual-label" data-i18n="scope3-title">Nanotecnologia en Ciencias de la Vida</span>
+              </div>
+            </div>
+            <div class="scope-info">
+              <h3 class="scope-title" data-i18n="scope3-title">Nanotecnologia en Ciencias de la Vida</h3>
+              <p class="scope-description" data-i18n="scope3-desc">Aplicaciones de la nanotecnologia en medicina, farmacologia y biotecnologia. Incluye sistemas de entrega de farmacos dirigidos, biosensores nanometricos, ingenieria de tejidos y diagnostico molecular avanzado.</p>
+              <div class="scope-impact">
+                <div class="scope-impact-title" data-i18n="scope-impact-label">Impacto Actual</div>
+                <p class="scope-impact-text" data-i18n="scope3-impact">Las nanoparticulas de ARNm hicieron posibles las vacunas COVID-19. Hoy, la nanomedicina permite detectar cancer en etapas tempranas con biosensores de grafeno y administrar quimioterapia directamente a tumores, reduciendo efectos secundarios en un 70%. El mercado de nanomedicina crecera a $350 mil millones para 2030.</p>
+              </div>
+              <div class="scope-tags">
+                <span class="scope-tag">Drug Delivery</span>
+                <span class="scope-tag">Biosensores</span>
+                <span class="scope-tag">Ingenieria de Tejidos</span>
+                <span class="scope-tag">Diagnostico</span>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 4: ML en Nano -->
+          <div class="scope-panel" id="scope-panel-4">
+            <div class="scope-visual">
+              <img src="assets/images/scope-ml.png" alt="Machine Learning en Nanotecnologia">
+              <div class="scope-visual-overlay">
+                <span class="scope-visual-label" data-i18n="scope4-title">Machine Learning en Nanotecnologia</span>
+              </div>
+            </div>
+            <div class="scope-info">
+              <h3 class="scope-title" data-i18n="scope4-title">Machine Learning en Nanotecnologia</h3>
+              <p class="scope-description" data-i18n="scope4-desc">Integracion de inteligencia artificial y aprendizaje automatico para el descubrimiento acelerado de nanomateriales, prediccion de propiedades y optimizacion de procesos de nanofabricacion.</p>
+              <div class="scope-impact">
+                <div class="scope-impact-title" data-i18n="scope-impact-label">Impacto Actual</div>
+                <p class="scope-impact-text" data-i18n="scope4-impact">Los modelos de ML estan reduciendo el tiempo de descubrimiento de nuevos nanomateriales de anos a semanas. Redes neuronales predicen propiedades de nanoparticulas con 95% de precision, y algoritmos geneticos optimizan la sintesis de nanoestructuras complejas, acelerando la innovacion exponencialmente.</p>
+              </div>
+              <div class="scope-tags">
+                <span class="scope-tag">Deep Learning</span>
+                <span class="scope-tag">Prediccion</span>
+                <span class="scope-tag">Descubrimiento</span>
+                <span class="scope-tag">Optimizacion</span>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 5: Tecnologia Cuantica -->
+          <div class="scope-panel" id="scope-panel-5">
+            <div class="scope-visual">
+              <img src="assets/images/scope-quantum.png" alt="Tecnologia Cuantica">
+              <div class="scope-visual-overlay">
+                <span class="scope-visual-label" data-i18n="scope5-title">Tecnologia Cuantica</span>
+              </div>
+            </div>
+            <div class="scope-info">
+              <h3 class="scope-title" data-i18n="scope5-title">Tecnologia Cuantica</h3>
+              <p class="scope-description" data-i18n="scope5-desc">Computacion cuantica, sensores cuanticos, comunicaciones cuanticas y materiales cuanticos. Esta area explora como los fenomenos cuanticos a escala nanometrica pueden revolucionar la tecnologia.</p>
+              <div class="scope-impact">
+                <div class="scope-impact-title" data-i18n="scope-impact-label">Impacto Actual</div>
+                <p class="scope-impact-text" data-i18n="scope5-impact">Los computadores cuanticos con qubits superconductores de escala nanometrica estan resolviendo problemas antes imposibles. Los sensores cuanticos ofrecen precision sin precedentes para diagnostico medico y navegacion. Se estima que la economia cuantica generara $850 mil millones para 2040.</p>
+              </div>
+              <div class="scope-tags">
+                <span class="scope-tag">Qubits</span>
+                <span class="scope-tag">Criptografia</span>
+                <span class="scope-tag">Sensores</span>
+                <span class="scope-tag">Materiales Cuanticos</span>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 6: Nanodispositivos -->
+          <div class="scope-panel" id="scope-panel-6">
+            <div class="scope-visual">
+              <img src="assets/images/scope-nanodevices.png" alt="Nanodispositivos y Nanofabricacion">
+              <div class="scope-visual-overlay">
+                <span class="scope-visual-label" data-i18n="scope6-title">Nanodispositivos y Nanofabricacion</span>
+              </div>
+            </div>
+            <div class="scope-info">
+              <h3 class="scope-title" data-i18n="scope6-title">Nanodispositivos y Nanofabricacion</h3>
+              <p class="scope-description" data-i18n="scope6-desc">Tecnicas avanzadas de litografia, autoensamblaje molecular, nanoimprint y fabricacion aditiva a escala nanometrica. Incluye el diseno y manufactura de dispositivos funcionales a escala atomica.</p>
+              <div class="scope-impact">
+                <div class="scope-impact-title" data-i18n="scope-impact-label">Impacto Actual</div>
+                <p class="scope-impact-text" data-i18n="scope6-impact">La litografia ultravioleta extrema (EUV) permite fabricar estructuras de 3nm. El autoensamblaje de ADN esta creando nanoestructuras programables con precision atomica. Los metasuperficies nanofabricadas estan revolucionando la optica con lentes planas ultrafinas.</p>
+              </div>
+              <div class="scope-tags">
+                <span class="scope-tag">Litografia EUV</span>
+                <span class="scope-tag">Autoensamblaje</span>
+                <span class="scope-tag">Nanoimprint</span>
+                <span class="scope-tag">Fabricacion Aditiva</span>
+              </div>
+            </div>
+          </div>
+          <!-- Panel 7: Nanorobotica -->
+          <div class="scope-panel" id="scope-panel-7">
+            <div class="scope-visual">
+              <img src="assets/images/scope-nanorobotics.png" alt="Nanorobotica">
+              <div class="scope-visual-overlay">
+                <span class="scope-visual-label" data-i18n="scope7-title">Nanorobotica</span>
+              </div>
+            </div>
+            <div class="scope-info">
+              <h3 class="scope-title" data-i18n="scope7-title">Nanorobotica</h3>
+              <p class="scope-description" data-i18n="scope7-desc">Maquinas moleculares, nanomotores, nanorobots medicos y sistemas autonomos a escala nanometrica. La nanorobotica combina nanotecnologia, robotica e inteligencia artificial para crear sistemas capaces de operar a escala molecular.</p>
+              <div class="scope-impact">
+                <div class="scope-impact-title" data-i18n="scope-impact-label">Impacto Actual</div>
+                <p class="scope-impact-text" data-i18n="scope7-impact">Nanorobots de ADN ya navegan el torrente sanguineo para entregar farmacos con precision. Nanomotores alimentados por luz descontaminan aguas residuales. Se proyecta que la nanorobotica transformara la medicina, la manufactura y la remediacion ambiental, con un mercado de $15 mil millones para 2030.</p>
+              </div>
+              <div class="scope-tags">
+                <span class="scope-tag">Nanomotores</span>
+                <span class="scope-tag">Nanorobots</span>
+                <span class="scope-tag">Maquinas Moleculares</span>
+                <span class="scope-tag">Sistemas Autonomos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESS / HOW IT WORKS
+         ============================================================ -->
+    <section class="section" id="process" style="position: relative; overflow: hidden;">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-label" data-i18n="process-label">Como funciona</div>
+          <h2 class="section-title" data-i18n="process-title">Proceso de Participacion</h2>
+          <p class="section-description" data-i18n="process-description">Sigue estos pasos para participar en IEEE LANANO 2026 y presentar tu investigacion.</p>
+        </div>
+        <div class="process-timeline">
+          <!-- Step 1 -->
+          <div class="process-step animate-on-scroll">
+            <div class="process-number">1</div>
+            <div class="process-content">
+              <h3 class="process-title" data-i18n="process1-title">Registro y Formacion de Grupos</h3>
+              <p class="process-text" data-i18n="process1-text">Registrate en la conferencia y seras asignado a un grupo de investigacion segun tu area de afinidad tematica.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="process-step animate-on-scroll delay-1">
+            <div class="process-number">2</div>
+            <div class="process-content">
+              <h3 class="process-title" data-i18n="process2-title">Asignacion de Coautores</h3>
+              <p class="process-text" data-i18n="process2-text">Ponentes internacionales y locales seran asignados como coautores para guiar y fortalecer tu investigacion.</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="process-step animate-on-scroll delay-2">
+            <div class="process-number">3</div>
+            <div class="process-content">
+              <h3 class="process-title" data-i18n="process3-title">Desarrollo de Investigacion</h3>
+              <p class="process-text" data-i18n="process3-text">Trabaja en colaboracion con tu grupo y coautores para desarrollar un articulo cientifico original (4-6 paginas).</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="process-step animate-on-scroll delay-3">
+            <div class="process-number">4</div>
+            <div class="process-content">
+              <h3 class="process-title" data-i18n="process4-title">Postulacion del Articulo</h3>
+              <p class="process-text" data-i18n="process4-text">Envia tu articulo a traves del sistema de postulacion. Sera sometido a revision por pares para evaluar calidad y relevancia.</p>
+            </div>
+          </div>
+          <!-- Step 5 -->
+          <div class="process-step animate-on-scroll delay-4">
+            <div class="process-number">5</div>
+            <div class="process-content">
+              <h3 class="process-title" data-i18n="process5-title">Exposicion Virtual</h3>
+              <p class="process-text" data-i18n="process5-text">Presenta tu investigacion en la conferencia virtual ante la comunidad cientifica internacional. Los articulos aceptados se publican en IEEE Xplore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         KEY DATES
+         ============================================================ -->
+    <section class="section section-alt" id="dates" style="position: relative; overflow: hidden;">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-label" data-i18n="dates-label">Fechas importantes</div>
+          <h2 class="section-title" data-i18n="dates-title">Calendario 2026</h2>
+          <p class="section-description" data-i18n="dates-description">Marca estas fechas en tu calendario para no perderte ninguna oportunidad.</p>
+        </div>
+        <div class="dates-grid">
+          <div class="date-card animate-on-scroll">
+            <div class="date-month" data-i18n="date1-month">JUL</div>
+            <div class="date-day" data-i18n="date1-day">12</div>
+            <h3 class="date-title" data-i18n="date1-title">Fecha limite de resumenes</h3>
+            <p class="date-text" data-i18n="date1-text">Ultimo dia para enviar tu resumen de investigacion.</p>
+          </div>
+          <div class="date-card animate-on-scroll delay-1">
+            <div class="date-month" data-i18n="date2-month">AGO</div>
+            <div class="date-day" data-i18n="date2-day">02</div>
+            <h3 class="date-title" data-i18n="date2-title">Fecha limite de articulos</h3>
+            <p class="date-text" data-i18n="date2-text">Ultimo dia para enviar el articulo completo (4-6 paginas).</p>
+          </div>
+          <div class="date-card animate-on-scroll delay-2">
+            <div class="date-month" data-i18n="date3-month">SEP</div>
+            <div class="date-day" data-i18n="date3-day">13</div>
+            <h3 class="date-title" data-i18n="date3-title">Registro anticipado</h3>
+            <p class="date-text" data-i18n="date3-text">Aprovecha la tarifa reducida para registro temprano.</p>
+          </div>
+          <div class="date-card highlight animate-on-scroll delay-3">
+            <span class="date-badge">Conferencia</span>
+            <div class="date-month" data-i18n="date4-month">NOV</div>
+            <div class="date-day" data-i18n="date4-day">3-6</div>
+            <h3 class="date-title" data-i18n="date4-title">Conferencia IEEE LANANO 2026</h3>
+            <p class="date-text" data-i18n="date4-text">Cuatro dias de presentaciones, training y networking presencial en Yachay Tech.</p>
+          </div>
+        </div>
+        <!-- Placeholder for internal event date -->
+        <div class="date-insert" style="text-align:center;margin-top:48px;padding:24px;border:1px dashed rgba(255,255,255,0.15);border-radius:12px;color:#94A3B8;font-size:0.9rem;">
+          <!-- INSERTAR FECHA DEL EVENTO INTERNO AQUI -->
+          Fechas de organizacion interna: Proximamente
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SPEAKERS
+         ============================================================ -->
+    <section class="section" id="speakers" style="position: relative; overflow: hidden;">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-label" data-i18n="speakers-label">Ponentes</div>
+          <h2 class="section-title" data-i18n="speakers-title">Ponentes Invitados</h2>
+          <p class="section-description" data-i18n="speakers-description">Investigadores internacionales y locales de alto nivel que actuaran como coautores y guias en el proceso de investigacion.</p>
+        </div>
+        <!-- Filter Buttons -->
+        <div class="speakers-filter">
+          <button class="speakers-filter-btn active" data-filter="all" data-i18n="speakers-filter-all">Todos</button>
+          <button class="speakers-filter-btn" data-filter="international" data-i18n="speakers-filter-international">Internacionales</button>
+          <button class="speakers-filter-btn" data-filter="local" data-i18n="speakers-filter-local">Locales</button>
+        </div>
+        <!-- Speakers Grid -->
+        <div class="speakers-grid">
+          <!-- International Speakers (9) -->
+          <div class="speaker-card animate-on-scroll" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Keynote Speaker</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-1" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Keynote Speaker</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-2" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Keynote Speaker</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-3" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Invited Speaker</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Invited Speaker</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-1" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Invited Speaker</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-2" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Invited Speaker</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-3" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Co-author</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll" data-type="international">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Co-author</p>
+              <p class="speaker-institution" data-i18n="speaker-institution-tba">Institucion por confirmar</p>
+              <span class="speaker-badge international" data-i18n="speaker-badge-international">Internacional</span>
+            </div>
+          </div>
+          <!-- Local Speakers (6) -->
+          <div class="speaker-card animate-on-scroll delay-1" data-type="local">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Invited Speaker</p>
+              <p class="speaker-institution">Yachay Tech University</p>
+              <span class="speaker-badge local" data-i18n="speaker-badge-local">Local</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-2" data-type="local">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Invited Speaker</p>
+              <p class="speaker-institution">Yachay Tech University</p>
+              <span class="speaker-badge local" data-i18n="speaker-badge-local">Local</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-3" data-type="local">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Co-author</p>
+              <p class="speaker-institution">Yachay Tech University</p>
+              <span class="speaker-badge local" data-i18n="speaker-badge-local">Local</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll" data-type="local">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Co-author</p>
+              <p class="speaker-institution">Yachay Tech University</p>
+              <span class="speaker-badge local" data-i18n="speaker-badge-local">Local</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-1" data-type="local">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Co-author</p>
+              <p class="speaker-institution">Yachay Tech University</p>
+              <span class="speaker-badge local" data-i18n="speaker-badge-local">Local</span>
+            </div>
+          </div>
+          <div class="speaker-card animate-on-scroll delay-2" data-type="local">
+            <div class="speaker-photo">
+              <svg viewBox="0 0 200 200" fill="none"><rect width="200" height="200" fill="#1a2332"/><circle cx="100" cy="70" r="32" fill="#2a3444"/><ellipse cx="100" cy="170" rx="50" ry="40" fill="#2a3444"/></svg>
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name" data-i18n="speaker-tba">Por confirmar</h3>
+              <p class="speaker-role">Co-author</p>
+              <p class="speaker-institution">Yachay Tech University</p>
+              <span class="speaker-badge local" data-i18n="speaker-badge-local">Local</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CALL FOR PAPERS
+         ============================================================ -->
+    <section class="section section-alt" id="cfp" style="position: relative; overflow: hidden;">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-label" data-i18n="cfp-label">Convocatoria de articulos</div>
+          <h2 class="section-title" data-i18n="cfp-title">Call for Papers</h2>
+          <p class="section-description" data-i18n="cfp-description">Invitamos la postulacion de articulos originales para el segundo volumen de los Proceedings de IEEE LANANO.</p>
+        </div>
+        <div class="cfp-grid">
+          <div class="cfp-content">
+            <!-- IEEE Xplore Highlight -->
+            <div class="cfp-highlight">
+              <h3 class="cfp-highlight-title" data-i18n="cfp-highlight-title">Publicacion en IEEE Xplore</h3>
+              <p data-i18n="cfp-highlight-text">Los proceedings seran publicados en IEEE Xplore Digital Library, asegurando amplia difusion e indexacion de las contribuciones aceptadas.</p>
+            </div>
+            <!-- Submission Format -->
+            <h3 data-i18n="cfp-format-title" style="margin-top:32px;margin-bottom:16px;">Formato de Postulacion</h3>
+            <ul class="cfp-list">
+              <li data-i18n="cfp-format-1">Articulos regulares originales de 4 a 6 paginas</li>
+              <li data-i18n="cfp-format-2">Contribuciones novedosas en los topicos principales</li>
+              <li data-i18n="cfp-format-3">Proceso de revision por pares</li>
+              <li data-i18n="cfp-format-4">Manuscritos en formato IEEE</li>
+            </ul>
+          </div>
+          <!-- Sidebar -->
+          <div class="cfp-sidebar">
+            <h3 class="cfp-sidebar-title" data-i18n="cfp-sidebar-title">Postula tu Articulo</h3>
+            <p data-i18n="cfp-sidebar-text" style="color:var(--text-muted);font-size:0.9rem;margin-bottom:16px;">Envia tu manuscrito a traves de nuestro sistema de postulacion.</p>
+            <div class="cfp-action">
+              <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="cfp-sidebar-btn" id="submission-link">Ir al Formulario de Postulacion</a>
+            </div>
+            <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--border);">
+              <p data-i18n="cfp-sidebar-ref" style="color:var(--text-muted);font-size:0.85rem;margin-bottom:12px;">Consulta el volumen anterior de los proceedings como referencia.</p>
+              <a href="https://ieeexplore.ieee.org/xpl/conhome/11512310/proceeding" target="_blank" rel="noopener" class="btn btn-outline" style="width:100%;justify-content:center;font-size:0.85rem;" data-i18n="cfp-sidebar-ref-link">
+                Ver Proceedings Anteriores
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SPONSORS
+         ============================================================ -->
+    <section class="section" id="sponsors">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label" data-i18n="sponsors-label">Organizadores y patrocinadores</div>
+          <h2 class="section-title" data-i18n="sponsors-title">Nuestros Aliados</h2>
+        </div>
+        <!-- Organized by -->
+        <div class="sponsors-tier">
+          <div class="sponsors-tier-label" data-i18n="sponsors-organized">Organizado por</div>
+          <div class="sponsors-row">
+            <a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener" class="sponsor-logo-item">
+              <img src="assets/logo-ieee-glass.png" alt="IEEE Nanotechnology Council - Yachay Tech Student Branch">
+            </a>
+            <a href="https://www.yachaytech.edu.ec/" target="_blank" rel="noopener" class="sponsor-logo-item">
+              <img src="assets/logo-yt-glass.png" alt="Universidad Yachay Tech">
+            </a>
+          </div>
+        </div>
+        <!-- Co-sponsored by -->
+        <div class="sponsors-tier">
+          <div class="sponsors-tier-label" data-i18n="sponsors-sponsored">Co-patrocinado por</div>
+          <div class="sponsors-row">
+            <a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener" class="sponsor-logo-item">
+              <img src="assets/logo-ieee-glass.png" alt="IEEE Nanotechnology Council">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section class="section section-alt" id="contact" style="position: relative; overflow: hidden;">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-label" data-i18n="contact-label">Contacto</div>
+          <h2 class="section-title" data-i18n="contact-title">Contactanos</h2>
+          <p class="section-description" data-i18n="contact-description">Tienes preguntas? No dudes en escribirnos.</p>
+        </div>
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00A6A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <h3 data-i18n="contact-email-label" style="font-size:0.9rem;margin-bottom:4px;">Correo Electronico</h3>
+                <a href="mailto:ieee.ntc@yachaytech.edu.ec" style="color:var(--accent-teal);font-size:0.85rem;">ieee.ntc@yachaytech.edu.ec</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00A6A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <h3 data-i18n="contact-linkedin-label" style="font-size:0.9rem;margin-bottom:4px;">LinkedIn</h3>
+                <a href="https://www.linkedin.com/company/ieee-ntc-yachay-tech/" target="_blank" rel="noopener" style="color:var(--accent-teal);font-size:0.85rem;">IEEE NTC Yachay Tech</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00A6A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <h3 data-i18n="contact-instagram-label" style="font-size:0.9rem;margin-bottom:4px;">Instagram</h3>
+                <a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener" style="color:var(--accent-teal);font-size:0.85rem;">@ntc.yachaytech</a>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name" data-i18n="contact-form-name">Nombre completo</label>
+              <input class="form-input" type="text" id="form-name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email" data-i18n="contact-form-email">Correo electronico</label>
+              <input class="form-input" type="email" id="form-email" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-subject" data-i18n="contact-form-subject">Asunto</label>
+              <input class="form-input" type="text" id="form-subject" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message" data-i18n="contact-form-message">Mensaje</label>
+              <textarea class="form-textarea" id="form-message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="contact-form-submit">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div style="margin-bottom:16px;">
+            <img src="assets/logo-ieee-glass.png" alt="IEEE LANANO 2026 Logo" style="height:140px;width:auto;clip-path:inset(18% 4% 18% 4% round 12px);">
+          </div>
+          <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.7;" data-i18n="footer-about-text">Conferencia presencial organizada por la rama estudiantil IEEE NTC de Yachay Tech University.</p>
+          <div class="footer-social" style="margin-top:20px;">
+            <a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/ieee-ntc-yachay-tech/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:ieee.ntc@yachaytech.edu.ec" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title" data-i18n="footer-links-title">Enlaces Rapidos</h4>
+          <ul class="footer-links">
+            <li><a href="#about" data-i18n="nav-about">Acerca de</a></li>
+            <li><a href="#scope" data-i18n="nav-scope">Alcance</a></li>
+            <li><a href="#process" data-i18n="nav-process">Proceso</a></li>
+            <li><a href="#dates" data-i18n="nav-dates">Fechas</a></li>
+            <li><a href="#speakers" data-i18n="nav-speakers">Ponentes</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div>
+          <h4 class="footer-title" data-i18n="footer-resources-title">Recursos</h4>
+          <ul class="footer-links">
+            <li><a href="#cfp" data-i18n="nav-cfp">Convocatoria</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/conhome/11512310/proceeding" target="_blank" rel="noopener">IEEE Xplore Proceedings</a></li>
+            <li><a href="https://ieee-lanano.org/edition-2026/welcome-to-ieee-lanano-2026/" target="_blank" rel="noopener">IEEE LANANO Official</a></li>
+            <li><a href="https://ieeenano.org/" target="_blank" rel="noopener">IEEE Nanotechnology Council</a></li>
+            <li><a href="https://www.yachaytech.edu.ec/" target="_blank" rel="noopener">Yachay Tech University</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-title" data-i18n="footer-contact-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:ieee.ntc@yachaytech.edu.ec">ieee.ntc@yachaytech.edu.ec</a></li>
+            <li><a href="https://www.linkedin.com/company/ieee-ntc-yachay-tech/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/ntc.yachaytech" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p data-i18n="footer-copyright">&copy; 2026 IEEE - Todos los derechos reservados. IEEE es la organizacion profesional tecnica mas grande del mundo dedicada al avance de la tecnologia en beneficio de la humanidad.</p>
+        <div class="footer-ieee-links">
+          <a href="https://www.ieee.org/accessibility-statement.html" target="_blank" rel="noopener">Accessibility</a>
+          <a href="https://www.ieee.org/about/corporate/governance/p9-26.html" target="_blank" rel="noopener">Nondiscrimination Policy</a>
+          <a href="https://www.ieee.org/security-privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="https://www.ieee.org/about/help/site-terms-conditions.html" target="_blank" rel="noopener">Terms & Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
