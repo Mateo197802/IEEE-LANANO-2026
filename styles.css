@@ -314,9 +314,10 @@ p {
 }
 
 .nav-logo img {
-    height: 128px; /* 20% smaller */
+    height: 90px; /* Reduced by 30% for better integration */
     width: auto;
-    clip-path: inset(18% 4% 18% 4% round 12px); /* Tighter crop to remove excess glass border */
+    mix-blend-mode: screen; /* Removes solid black background */
+    opacity: 0.95;
 }
 
 .nav-logo span {
@@ -2365,8 +2366,8 @@ p {
     align-items: center;
     justify-content: center;
     width: auto;
-    min-width: 280px;
-    height: 120px;
+    min-width: 340px;
+    height: 150px; /* 25% larger */
     padding: 24px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     backdrop-filter: blur(12px);
@@ -2391,6 +2392,7 @@ p {
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    mix-blend-mode: screen; /* Removes solid black background */
     opacity: 0.9;
     transition: all 0.4s ease;
 }
@@ -2409,8 +2411,8 @@ p {
     align-items: center;
     justify-content: center;
     width: auto;
-    min-width: 180px;
-    height: 80px;
+    min-width: 200px;
+    height: 100px; /* 25% larger */
     padding: 16px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     backdrop-filter: blur(8px);
@@ -2428,6 +2430,7 @@ p {
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    mix-blend-mode: screen; /* Removes solid black background */
     opacity: 0.85;
     transition: all 0.3s ease;
 }
