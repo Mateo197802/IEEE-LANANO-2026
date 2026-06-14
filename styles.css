@@ -2362,13 +2362,24 @@ p {
 /* Sponsor logo images (real logos) */
 /* Sponsor logo containers */
 .sponsor-logo-item {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
     min-width: 340px;
-    height: 150px; /* 25% larger */
+    height: 150px;
     padding: 24px;
+    transition: var(--transition);
+    animation: float 6s ease-in-out infinite;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.sponsor-logo-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -2379,22 +2390,23 @@ p {
     box-shadow: 
         inset 0 1px 1px rgba(255, 255, 255, 0.1),
         0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: -1;
     transition: var(--transition);
-    animation: float 6s ease-in-out infinite;
-    text-decoration: none;
 }
 
 .sponsor-logo-item:nth-child(even) {
     animation-delay: 1.5s;
 }
 .sponsor-logo-item img {
+    position: relative;
     height: 100%;
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    mix-blend-mode: screen; /* Removes solid black background */
+    mix-blend-mode: screen;
     opacity: 0.9;
     transition: all 0.4s ease;
+    z-index: 2;
 }
 
 .sponsor-logo-item:hover {
@@ -2407,25 +2419,37 @@ p {
 
 /* Hero logo containers */
 .hero-logo-item {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
     min-width: 200px;
-    height: 100px; /* 25% larger */
+    height: 100px;
     padding: 16px;
+    transition: var(--transition);
+    animation: float 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+.hero-logo-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
+    z-index: -1;
     transition: var(--transition);
-    animation: float 6s ease-in-out infinite;
 }
+
 .hero-logo-item:nth-child(3) {
     animation-delay: 2s;
 }
 .hero-logo-item img {
+    position: relative;
     height: 100%;
     width: auto;
     max-width: 100%;
@@ -2433,6 +2457,7 @@ p {
     mix-blend-mode: screen; /* Removes solid black background */
     opacity: 0.85;
     transition: all 0.3s ease;
+    z-index: 2;
 }
 .hero-logo-item:hover {
     transform: translateY(-4px) scale(1.02);
