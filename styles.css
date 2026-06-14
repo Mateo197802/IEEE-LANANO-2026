@@ -316,7 +316,6 @@ p {
 .nav-logo img {
     height: 90px; /* Reduced by 30% for better integration */
     width: auto;
-    mix-blend-mode: screen; /* Removes solid black background */
     opacity: 0.95;
 }
 
@@ -2403,7 +2402,6 @@ p {
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    mix-blend-mode: screen;
     opacity: 0.9;
     transition: all 0.4s ease;
     z-index: 2;
