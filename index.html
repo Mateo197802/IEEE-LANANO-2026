@@ -38,31 +38,29 @@
        HEADER / NAVIGATION
        ============================================================ -->
   <header class="header" id="header">
-    <div class="container">
-      <nav class="nav-container">
-        <a href="#" class="nav-logo">
-          <img src="assets/logo-ieee-ntc-yachay-transparent.png" alt="IEEE Nanotechnology Council Yachay Tech Student Branch">
-        </a>
-        <ul class="nav-links">
-          <div class="nav-indicator" id="nav-indicator"></div>
-          <li><a href="#about" class="nav-link" data-i18n="nav-about">Acerca de</a></li>
-          <li><a href="#scope" class="nav-link" data-i18n="nav-scope">Alcance</a></li>
-          <li><a href="#process" class="nav-link" data-i18n="nav-process">Proceso</a></li>
-          <li><a href="#dates" class="nav-link" data-i18n="nav-dates">Fechas</a></li>
-          <li><a href="#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a></li>
-          <li><a href="#cfp" class="nav-link" data-i18n="nav-cfp">Convocatoria</a></li>
-          <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
-        </ul>
-        <div class="nav-actions">
-          <button class="lang-btn active" id="btn-es">ES</button>
-          <button class="lang-btn" id="btn-en">EN</button>
-          <a href="https://forms.gle/KQwn8YBgBX9i1F6HA" target="_blank" rel="noopener" class="btn-submit" data-i18n="nav-submit">Postular</a>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
-    </div>
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo-ieee-ntc-yachay-transparent.png" alt="IEEE Nanotechnology Council Yachay Tech Student Branch">
+      </a>
+      <ul class="nav-links">
+        <div class="nav-indicator" id="nav-indicator"></div>
+        <li><a href="#about" class="nav-link" data-i18n="nav-about">Acerca de</a></li>
+        <li><a href="#scope" class="nav-link" data-i18n="nav-scope">Alcance</a></li>
+        <li><a href="#process" class="nav-link" data-i18n="nav-process">Proceso</a></li>
+        <li><a href="#dates" class="nav-link" data-i18n="nav-dates">Fechas</a></li>
+        <li><a href="#speakers" class="nav-link" data-i18n="nav-speakers">Ponentes</a></li>
+        <li><a href="#cfp" class="nav-link" data-i18n="nav-cfp">Convocatoria</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-btn active" id="btn-es">ES</button>
+        <button class="lang-btn" id="btn-en">EN</button>
+        <a href="https://forms.gle/KQwn8YBgBX9i1F6HA" target="_blank" rel="noopener" class="btn-submit" data-i18n="nav-submit">Postular</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
     <div class="mobile-menu" id="mobile-menu">
       <a href="#about" class="nav-link" data-i18n="nav-about">Acerca de</a>
       <a href="#scope" class="nav-link" data-i18n="nav-scope">Alcance</a>
@@ -90,10 +88,13 @@
         <p class="hero-subtitle" data-i18n="hero-subtitle">Latin American Conference on Nanotechnology</p>
         <h1 class="hero-title" data-i18n="hero-title">IEEE LANANO 2026 PAPER TRAINING</h1>
         <p class="hero-description" data-i18n="hero-description">La segunda Conferencia Latinoamericana IEEE sobre Nanotecnologia. Una plataforma presencial para cientificos, ingenieros y educadores de todo el mundo para presentar investigaciones de vanguardia en nanociencia y nanotecnologia. Incluye un programa de training especializado.</p>
-        <div class="hero-divider"></div>
         <div class="countdown-container" style="position: relative;">
           <div class="countdown-glow"></div>
-          <p class="countdown-label" data-i18n="countdown-label" style="position: relative; z-index: 1;">La conferencia comienza en</p>
+          <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 24px; gap: 16px;">
+            <div style="height: 1px; width: 60px; background: rgba(255,255,255,0.2);"></div>
+            <p class="countdown-label" data-i18n="countdown-label" style="position: relative; z-index: 1; margin-bottom: 0; font-weight: 600;">La conferencia comienza en</p>
+            <div style="height: 1px; width: 60px; background: rgba(255,255,255,0.2);"></div>
+          </div>
           <div class="countdown-grid" style="position: relative; z-index: 1;">
             <div class="countdown-item">
               <span class="countdown-value" id="countdown-days">000</span>
@@ -118,16 +119,14 @@
           <a href="#about" class="btn btn-outline" data-i18n="hero-btn-more">Saber Mas</a>
         </div>
       </div>
-      <div class="hero-logos">
-        <div class="hero-logo-item">
+      <div class="hero-logos" style="gap: 24px; padding-top: 24px; border-top: none;">
+        <div class="sponsor-logo-item" style="min-width: 320px; height: 130px; animation-delay: 0s;">
           <img src="assets/logo-ieee-ntc-yachay-transparent.png" alt="IEEE Nanotechnology Council">
         </div>
-        <div class="hero-logo-divider" style="width:1px;height:32px;background:rgba(255,255,255,0.2)"></div>
-        <div class="hero-logo-item">
+        <div class="sponsor-logo-item" style="min-width: 320px; height: 130px; animation-delay: 0.2s;">
           <img src="assets/logo-ieee-sb-transparent.png" alt="IEEE Student Branch Yachay Tech">
         </div>
-        <div class="hero-logo-divider" style="width:1px;height:32px;background:rgba(255,255,255,0.2)"></div>
-        <div class="hero-logo-item">
+        <div class="sponsor-logo-item" style="min-width: 320px; height: 130px; animation-delay: 0.4s;">
           <img src="assets/logo-yt-transparent.png" alt="Yachay Tech University">
         </div>
       </div>
