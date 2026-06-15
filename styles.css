@@ -2391,8 +2391,8 @@ p {
     align-items: center;
     justify-content: center;
     width: auto;
-    min-width: 450px;
-    height: 200px;
+    min-width: 320px;
+    height: 130px;
     padding: 24px;
     transition: var(--transition);
     animation: float 6s ease-in-out infinite;
