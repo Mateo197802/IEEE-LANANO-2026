@@ -1634,6 +1634,32 @@ p {
         0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.speaker-scholar-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #4DB8FF;
+    background: rgba(77, 184, 255, 0.1);
+    border: 1px solid rgba(77, 184, 255, 0.25);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.speaker-scholar-link:hover {
+    background: rgba(77, 184, 255, 0.2);
+    border-color: rgba(77, 184, 255, 0.5);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.speaker-scholar-link svg {
+    flex-shrink: 0;
+}
 /* ============================================================
    13. Call for Papers
    ============================================================ */
