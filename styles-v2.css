@@ -3230,32 +3230,52 @@ p {
    ============================================================ */
 @media (max-height: 800px) {
     .hero {
-        padding-top: 100px;
-        padding-bottom: 20px;
+        padding-top: 85px;
+        padding-bottom: 15px;
     }
     .hero-title {
-        font-size: clamp(2rem, 4vw, 3.5rem);
+        font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+        margin-bottom: 8px;
+    }
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+    .hero-description {
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+        line-height: 1.4;
     }
     .hero-content {
-        padding: 20px 16px;
+        padding: 10px 16px;
     }
-    .countdown-item {
-        padding: 8px 12px;
-        min-width: 80px;
-    }
-    .countdown-value {
-        font-size: 1.5rem;
+    .countdown-container {
+        margin-bottom: 16px;
     }
     .countdown-label {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+        margin-bottom: 12px;
+    }
+    .countdown-grid {
+        gap: 8px;
+    }
+    .countdown-item {
+        padding: 8px 10px;
+        min-width: 60px;
+    }
+    .countdown-value {
+        font-size: 1.3rem;
+    }
+    .hero-cta {
+        margin-bottom: 16px;
     }
     .hero-logos {
-        padding-top: 16px;
-        gap: 16px;
+        padding-top: 12px;
+        gap: 12px;
     }
     .sponsor-logo-item {
-        height: 70px;
-        min-width: 220px;
-        padding: 12px;
+        height: 60px;
+        min-width: 180px;
+        padding: 8px;
     }
 }
