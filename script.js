@@ -80,7 +80,7 @@ const translations = {
     'scope-tab7': 'Nanorobótica',
 
     'scope1-title': 'Nanomateriales Avanzados',
-    'scope1-desc': 'Investigación en grafeno, nanotubos de carbono, materiales 2D, nanocompositos y nanomateriales funcionales. Esta área abarca el diseño, síntesis y caracterización de materiales a escala nanométrica con propiedades únicas para aplicaciones en energía, electrónica, medicina y medio ambiente.',
+    'scope1-desc': 'Investigación en grafeno, nanotubos de carbono, materiales 2D, nanocompositos, nanopartículas, recubrimientos nanoestructurados y nanomateriales funcionales. Esta área abarca el diseño, síntesis y caracterización de materiales a escala nanométrica con propiedades únicas para aplicaciones en energía, electrónica, medicina y medio ambiente.',
     'scope1-impact': 'Los nanomateriales están revolucionando el almacenamiento de energía con baterías de grafeno que cargan en minutos, filtros de agua basados en nanotubos que eliminan el 99.9% de contaminantes, y recubrimientos autolimpiantes inspirados en la naturaleza. El mercado global de nanomateriales superará los $30 mil millones para 2027.',
 
     'scope2-title': 'Nuevas Tendencias en Nanoelectrónica',
@@ -156,6 +156,8 @@ const translations = {
     'speaker-institution-tba': 'Institución por confirmar',
     'speaker-badge-international': 'Internacional',
     'speaker-badge-local': 'Local',
+    'speaker-role-director': 'Director de Proyecto / Mentor',
+    'speaker-role-keynote': 'Ponente Magistral',
 
     // CFP
     'cfp-label': 'Convocatoria de artículos',
@@ -204,6 +206,8 @@ const translations = {
     'tag-1-2': 'Nanotubos',
     'tag-1-3': 'Materiales 2D',
     'tag-1-4': 'Nanocompositos',
+    'tag-1-5': 'Nanopartículas',
+    'tag-1-6': 'Recubrimientos',
     'tag-2-1': 'Transistores',
     'tag-2-2': 'Spintronica',
     'tag-2-3': 'Electronica Flexible',
@@ -302,7 +306,7 @@ const translations = {
     'scope-tab7': 'Nanorobotics',
 
     'scope1-title': 'Advanced Nanomaterials',
-    'scope1-desc': 'Research in graphene, carbon nanotubes, 2D materials, nanocomposites, and functional nanomaterials. This area covers the design, synthesis, and characterization of materials at the nanoscale with unique properties for applications in energy, electronics, medicine, and the environment.',
+    'scope1-desc': 'Research in graphene, carbon nanotubes, 2D materials, nanocomposites, nanoparticles, nanostructured coatings, and functional nanomaterials. This area covers the design, synthesis, and characterization of materials at the nanoscale with unique properties for applications in energy, electronics, medicine, and the environment.',
     'scope1-impact': 'Nanomaterials are revolutionizing energy storage with graphene batteries that charge in minutes, nanotube-based water filters that remove 99.9% of contaminants, and nature-inspired self-cleaning coatings. The global nanomaterials market will exceed $30 billion by 2027.',
 
     'scope2-title': 'New Trends in Nanoelectronics',
@@ -378,6 +382,8 @@ const translations = {
     'speaker-institution-tba': 'Institution TBA',
     'speaker-badge-international': 'International',
     'speaker-badge-local': 'Local',
+    'speaker-role-director': 'Project Director / Mentor',
+    'speaker-role-keynote': 'Keynote Speaker',
 
     // CFP
     'cfp-label': 'Call for papers',
@@ -426,6 +432,8 @@ const translations = {
     'tag-1-2': 'Nanotubes',
     'tag-1-3': '2D Materials',
     'tag-1-4': 'Nanocomposites',
+    'tag-1-5': 'Nanoparticles',
+    'tag-1-6': 'Coatings',
     'tag-2-1': 'Transistors',
     'tag-2-2': 'Spintronics',
     'tag-2-3': 'Flexible Electronics',
