@@ -2201,6 +2201,11 @@ p {
     padding: 64px 0 32px;
 }
 
+.footer .container {
+    max-width: 100%;
+    padding: 0 48px;
+}
+
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -3026,6 +3031,10 @@ p {
    21. Responsive — Mobile (max-width: 768px)
    ============================================================ */
 @media (max-width: 768px) {
+    .footer .container {
+        padding: 0 24px;
+    }
+    
     .hero {
         padding-top: 100px;
     }
