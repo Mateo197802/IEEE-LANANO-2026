@@ -2214,8 +2214,10 @@ p {
 }
 
 .footer-brand img {
-    height: 40px;
-    width: auto;
+    max-height: 54px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .footer-brand-text {
@@ -2771,6 +2773,16 @@ p {
     }
     .nav-actions {
         gap: 16px;
+    }
+}
+
+/* ============================================================
+   19.5 Responsive - Footer (max-width: 1200px)
+   ============================================================ */
+@media (max-width: 1200px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
     }
 }
 
