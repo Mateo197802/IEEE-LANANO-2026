@@ -226,7 +226,21 @@ const translations = {
     'tag-7-1': 'Nanomotores',
     'tag-7-2': 'Nanorobots',
     'tag-7-3': 'Maquinas Moleculares',
-    'tag-7-4': 'Sistemas Autonomos'
+    'tag-7-4': 'Sistemas Autonomos',
+    
+    // Board
+    'board-solange-role': 'Presidenta',
+    'board-solange-bio': 'Estudiante de Biomedicina en la Universidad Yachay Tech, con interés en biomateriales, nanomedicina y regeneración celular. Ha desarrollado investigación en hidrogeles para cicatrización de heridas y representado a su rama estudiantil en encuentros internacionales (SBRM en Uruguay y El Salvador). Dentro de IEEE ha sido Tesorera de WIE y Vicepresidenta de la Rama Estudiantil, y actualmente es fundadora y presidenta del capítulo IEEE NTC en Yachay Tech, el primero de su tipo en Ecuador.',
+    'board-mateo-role': 'Vicepresidente',
+    'board-mateo-bio': 'Estudiante de 8vo semestre de Ingeniería Biomédica en Yachay Tech y colaborador en proyectos del MIT Critical Data, donde participa en la validación estadística de infraestructura de Inteligencia Artificial clínica. Es el creador de \'TITAN V4\', una plataforma diagnóstica para operar Edge AI en dispositivos de bajos recursos, y desarrollador principal del framework de automatización \'PRISMA-AT\'. Además de desempeñarse como Ayudante de Cátedra en tres ocasiones (Fisiología Humana, Bioquímica y Biología), su visión es descentralizar la tecnología de élite para impulsar la equidad médica global desde Ecuador.',
+    'board-ethan-role': 'Secretario',
+    'board-ethan-bio': 'Estudiante de Biomedicina en octavo semestre en Yachay Tech University. Actualmente se desempeña como Secretario de IEEE NTC, donde contribuye a la organización y coordinación de actividades del capítulo. Tiene un gran interés en la biología molecular aplicada al área médica y la ingeniería de tejidos. Obtuvo el tercer lugar en el Hult Prize con su emprendimiento social Gelgrowth.',
+    'board-emily-role': 'Tesorera',
+    'board-emily-bio': 'Estudiante de quinto semestre de Biomedicina en Yachay Tech. Forma parte de la directiva del IEEE NTC y del Club de Biomedicina, desempeñándose como Tesorera en ambos. Actualmente desarrolla una revisión académica sobre hipotiroidismo y sus enfoques actuales mediante biomarcadores. Se caracteriza por su pensamiento analítico, proactividad y vocación por su formación y comunidad.',
+    'board-kennedy-role': 'Webmáster',
+    'board-kennedy-bio': 'Estudiante de Ingeniería Biomédica en Yachay Tech. Interesado en desarrollar soluciones tecnológicas que contribuyan a la sociedad, desde el estudio de nanopartículas aplicadas a enfermedades como la diabetes, hasta el uso de redes neuronales y machine learning para el diagnóstico de anomalías médicas. Me caracterizo por mi curiosidad científica y por buscar comprender los problemas desde distintos enfoques.',
+    'board-fernanda-role': 'Webmáster',
+    'board-fernanda-bio': 'Estudiante de Geología en cuarto semestre en Yachay Tech University y actualmente se desempeña como Webmaster de IEEE Nanotechnology Council Student Chapter. Desde este rol gestiona la comunicación y presencia digital del capítulo, creando contenido y material visual para sus actividades. Cuenta con experiencia en edición de video y producción audiovisual.'
   },
 
   en: {
@@ -434,7 +448,21 @@ const translations = {
     'tag-7-1': 'Nanomotors',
     'tag-7-2': 'Nanorobotics',
     'tag-7-3': 'Molecular Machines',
-    'tag-7-4': 'Autonomous Systems'
+    'tag-7-4': 'Autonomous Systems',
+    
+    // Board
+    'board-solange-role': 'Chair',
+    'board-solange-bio': 'Biomedicine student at Yachay Tech University, interested in biomaterials, nanomedicine, and cell regeneration. She has conducted research on hydrogels for wound healing and represented her student branch at international meetings (SBRM in Uruguay and El Salvador). Within IEEE, she has served as WIE Treasurer and Student Branch Vice Chair, and is currently the founder and Chair of the IEEE NTC chapter at Yachay Tech, the first of its kind in Ecuador.',
+    'board-mateo-role': 'Vice Chair',
+    'board-mateo-bio': '8th-semester Biomedical Engineering student at Yachay Tech and collaborator on MIT Critical Data projects, participating in the statistical validation of clinical AI infrastructure. He is the creator of \'TITAN V4\', a diagnostic platform to operate Edge AI on low-resource devices, and lead developer of the \'PRISMA-AT\' automation framework. In addition to serving as a Teaching Assistant three times (Human Physiology, Biochemistry, and Biology), his vision is to decentralize elite technology to promote global health equity from Ecuador.',
+    'board-ethan-role': 'Secretary',
+    'board-ethan-bio': '8th-semester Biomedicine student at Yachay Tech University. He currently serves as Secretary of IEEE NTC, where he contributes to the organization and coordination of chapter activities. He has a strong interest in molecular biology applied to the medical field and tissue engineering. He won third place in the Hult Prize with his social entrepreneurship Gelgrowth.',
+    'board-emily-role': 'Treasurer',
+    'board-emily-bio': '5th-semester Biomedicine student at Yachay Tech. She is part of the IEEE NTC board and the Biomedicine Club, serving as Treasurer for both. She is currently developing an academic review on hypothyroidism and its current approaches using biomarkers. She is known for her analytical thinking, proactivity, and dedication to her education and community.',
+    'board-kennedy-role': 'Webmaster',
+    'board-kennedy-bio': 'Biomedical Engineering student at Yachay Tech. Interested in developing technological solutions that contribute to society, from the study of nanoparticles applied to diseases like diabetes, to the use of neural networks and machine learning for diagnosing medical anomalies. Characterized by scientific curiosity and seeking to understand problems from different perspectives.',
+    'board-fernanda-role': 'Webmaster',
+    'board-fernanda-bio': '4th-semester Geology student at Yachay Tech University and currently serves as Webmaster for the IEEE Nanotechnology Council Student Chapter. In this role, she manages the chapter\'s communication and digital presence, creating content and visual materials for its activities. She has experience in video editing and audiovisual production.'
   }
 };
 
