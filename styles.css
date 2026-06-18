@@ -531,9 +531,14 @@ p {
     border-bottom: none;
 }
 
-.mobile-menu .nav-actions {
-    padding-top: 16px;
-    justify-content: flex-start;
+.mobile-menu-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 24px;
+    margin-top: 8px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
 }
 
 /* ============================================================
@@ -2672,7 +2677,7 @@ p {
         display: flex;
     }
 
-    .nav-actions .btn-submit {
+    .nav-actions {
         display: none;
     }
 
