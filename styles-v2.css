@@ -3212,3 +3212,38 @@ p {
         height: 36px;
     }
 }
+
+/* ============================================================
+   24. Responsive - Short Heights (Laptops/Zoom)
+   ============================================================ */
+@media (max-height: 800px) {
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .hero-title {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+    }
+    .hero-content {
+        padding: 20px 16px;
+    }
+    .countdown-item {
+        padding: 8px 12px;
+        min-width: 80px;
+    }
+    .countdown-value {
+        font-size: 1.5rem;
+    }
+    .countdown-label {
+        font-size: 0.7rem;
+    }
+    .hero-logos {
+        padding-top: 16px;
+        gap: 16px;
+    }
+    .sponsor-logo-item {
+        height: 70px;
+        min-width: 220px;
+        padding: 12px;
+    }
+}
