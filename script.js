@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters();
   initParticles();
   initSpeakersFilter();
+  initBoardToggle();
 });
 
 /* ============================================================
@@ -1066,6 +1067,25 @@ function initSpeakersFilter() {
           }, 300);
         }
       });
+    });
+  });
+}
+
+/* ============================================================
+   BOARD EXPAND TOGGLE
+   ============================================================ */
+function initBoardToggle() {
+  const expandBtns = document.querySelectorAll('.board-expand-btn');
+  expandBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('.board-card');
+      if (card) {
+        card.classList.toggle('expanded');
+        const isExpanded = card.classList.contains('expanded');
+        // Update aria-label or title if needed
+        btn.setAttribute('aria-label', isExpanded ? 'Contraer' : 'Expandir');
+        btn.title = isExpanded ? 'Contraer' : 'Expandir';
+      }
     });
   });
 }

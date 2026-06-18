@@ -2896,27 +2896,50 @@ p {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.board-expand-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.board-expand-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .board-name {
     color: #fff;
     font-family: var(--font-heading);
     font-size: 1.2rem;
+    font-weight: 600;
     margin: 0 0 4px 0;
+    padding-right: 32px;
 }
 
 .board-role {
-    color: var(--accent-teal);
+    color: var(--primary-color);
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 16px;
-    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 .board-linkedin-link {
-    display: inline-flex;
+    display: none;
     align-items: center;
     align-self: center;
     gap: 6px;
@@ -2925,12 +2948,11 @@ p {
     border-radius: 999px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #4DB8FF;
-    background: rgba(77, 184, 255, 0.1);
-    border: 1px solid rgba(77, 184, 255, 0.25);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     text-decoration: none;
-    transition: all 0.3s ease;
-    align-self: flex-start;
+    transition: var(--transition);
 }
 
 .board-linkedin-link:hover {
@@ -2945,11 +2967,26 @@ p {
 }
 
 .board-bio {
+    display: none;
     color: var(--text-muted);
     font-size: 0.85rem;
     line-height: 1.6;
-    margin: 0;
-    flex-grow: 1;
+    margin: 16px 0 0 0;
+}
+
+.board-card.expanded .board-bio {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.board-card.expanded .board-linkedin-link {
+    display: inline-flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* ============================================================
