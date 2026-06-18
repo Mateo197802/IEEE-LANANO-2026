@@ -2640,6 +2640,18 @@ p {
         margin-bottom: 56px;
     }
 
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-actions {
+        display: none;
+    }
+
     .speakers-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -2670,18 +2682,6 @@ p {
    21. Responsive — Mobile (max-width: 768px)
    ============================================================ */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-actions {
-        display: none;
-    }
-
     .hero {
         padding-top: 100px;
     }
