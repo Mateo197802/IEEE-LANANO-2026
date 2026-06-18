@@ -4,6 +4,7 @@
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initBoardToggle();
   initHeader();
   initMobileMenu();
   initSmoothScroll();
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters();
   initParticles();
   initSpeakersFilter();
-  initBoardToggle();
 });
 
 /* ============================================================
@@ -1076,14 +1076,20 @@ function initSpeakersFilter() {
    ============================================================ */
 function initBoardToggle() {
   const expandBtns = document.querySelectorAll('.board-expand-btn');
+  console.log('Found board expand buttons:', expandBtns.length);
   expandBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('Expand button clicked');
       const card = this.closest('.board-card');
       if (card) {
         card.classList.toggle('expanded');
         const isExpanded = card.classList.contains('expanded');
+        console.log('Card is now expanded:', isExpanded);
         this.setAttribute('aria-label', isExpanded ? 'Contraer' : 'Expandir');
         this.title = isExpanded ? 'Contraer' : 'Expandir';
+      } else {
+        console.log('No closest .board-card found');
       }
     });
   });
