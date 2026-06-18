@@ -553,7 +553,7 @@ p {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 40px;
+    padding-top: 120px;
 }
 
 #hero-canvas {
@@ -2760,16 +2760,16 @@ p {
    ============================================================ */
 @media (max-width: 1440px) {
     .nav-container {
-        padding: 0 40px;
+        padding: 0 24px;
     }
     .nav-links {
-        gap: 24px;
+        gap: 16px;
+    }
+    .nav-link {
+        font-size: 0.8rem;
     }
     .nav-actions {
-        gap: 24px;
-    }
-    .hero-content {
-        margin-top: 100px;
+        gap: 16px;
     }
 }
 
