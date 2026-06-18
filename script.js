@@ -35,7 +35,7 @@ const translations = {
 
     // Hero
     'hero-badge': 'Noviembre 3-6, 2026 — Yachay Tech University',
-    'hero-subtitle': 'Latin American Conference on Nanotechnology',
+    'hero-subtitle': 'Conferencia Latinoamericana en Nanotecnología',
     'hero-title': 'IEEE LANANO 2026 PAPER TRAINING',
     'hero-description': 'La segunda Conferencia Latinoamericana IEEE sobre Nanotecnología. Una plataforma presencial para científicos, ingenieros y educadores de todo el mundo para presentar investigaciones de vanguardia en nanociencia y nanotecnología. Incluye un programa de training especializado.',
     'hero-btn-submit': 'Postular',
