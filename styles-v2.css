@@ -2827,8 +2827,9 @@ p {
    20b. Board of Directors
    ============================================================ */
 .board-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     margin-top: 48px;
 }
@@ -2844,6 +2845,9 @@ p {
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    flex: 1 1 280px;
+    max-width: 350px;
+    width: 100%;
 }
 
 .board-card:hover {
@@ -2984,10 +2988,7 @@ p {
         gap: 16px;
     }
 
-    .board-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-    }
+
 
     .cfp-grid {
         grid-template-columns: 1fr;
@@ -3116,9 +3117,7 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .board-grid {
-        grid-template-columns: 1fr;
-    }
+
 
     .container {
         padding: 0 16px;
