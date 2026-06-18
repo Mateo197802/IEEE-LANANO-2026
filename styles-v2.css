@@ -2840,22 +2840,44 @@ p {
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: var(--radius-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Added top border for initial glow */
+    border-radius: 16px;
     overflow: hidden;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
-    flex: 1 1 280px;
-    max-width: 350px;
-    width: 100%;
+    flex: 1 1 calc(33.333% - 24px);
+    min-width: 280px;
+    max-width: 400px;
+    position: relative;
+}
+
+.board-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+    pointer-events: none;
+    z-index: 2;
 }
 
 .board-card:hover {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
     border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-card), 0 0 20px rgba(0, 166, 160, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 
+        inset 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(0, 168, 160, 0.15);
+}
+
+.board-card:hover::after {
+    left: 200%;
 }
 
 .board-image-wrapper {
@@ -2886,10 +2908,7 @@ p {
     align-items: center;
     justify-content: center;
     color: var(--text-muted);
-    font-size: 0.9rem;
-    font-weight: 500;
-    background: linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.02) 75%, transparent 75%, transparent);
-    background-size: 20px 20px;
+    font-size: 2rem;
 }
 
 .board-info {
@@ -2904,14 +2923,12 @@ p {
     width: 100%;
     position: relative;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
-    padding: 8px;
-    margin-bottom: 16px;
+    padding: 6px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2921,8 +2938,7 @@ p {
 
 .board-expand-btn:hover {
     color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .board-name {
