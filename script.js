@@ -672,10 +672,15 @@ function initCountdown() {
    ============================================================ */
 
 function initLanguageToggle() {
-  const btnEs = document.getElementById('btn-es');
-  const btnEn = document.getElementById('btn-en');
+  const btnEsDesktop = document.getElementById('btn-es');
+  const btnEnDesktop = document.getElementById('btn-en');
+  const btnEsMobile = document.getElementById('btn-es-mobile');
+  const btnEnMobile = document.getElementById('btn-en-mobile');
 
-  if (!btnEs || !btnEn) return;
+  const btnEsGroup = [btnEsDesktop, btnEsMobile].filter(Boolean);
+  const btnEnGroup = [btnEnDesktop, btnEnMobile].filter(Boolean);
+
+  if (btnEsGroup.length === 0 || btnEnGroup.length === 0) return;
 
   let currentLang = localStorage.getItem('lanano-lang') || 'es';
 
@@ -701,19 +706,19 @@ function initLanguageToggle() {
 
     // Toggle active class on buttons
     if (lang === 'es') {
-      btnEs.classList.add('active');
-      btnEn.classList.remove('active');
+      btnEsGroup.forEach(btn => btn.classList.add('active'));
+      btnEnGroup.forEach(btn => btn.classList.remove('active'));
     } else {
-      btnEn.classList.add('active');
-      btnEs.classList.remove('active');
+      btnEnGroup.forEach(btn => btn.classList.add('active'));
+      btnEsGroup.forEach(btn => btn.classList.remove('active'));
     }
 
     // Update html lang attribute
     document.documentElement.lang = lang;
   }
 
-  btnEs.addEventListener('click', () => applyLanguage('es'));
-  btnEn.addEventListener('click', () => applyLanguage('en'));
+  btnEsGroup.forEach(btn => btn.addEventListener('click', () => applyLanguage('es')));
+  btnEnGroup.forEach(btn => btn.addEventListener('click', () => applyLanguage('en')));
 
   // Apply stored preference on load
   applyLanguage(currentLang);
